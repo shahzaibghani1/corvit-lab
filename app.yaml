@@ -1,0 +1,39 @@
+x: 5.55 #float
+name: shahzaib # string
+age: 24 #int
+isPresent: on # bool
+
+#white space significance like next line shows previous variable value is initialized
+#primitive data types
+
+#case sensitive language
+#block vs flow stype
+#indentation
+
+Fruits: # block style
+  - apple
+  - mango
+  - 50
+
+fruits: [apple, mango, 11] # flow style
+
+names: # dictionary
+  -name1: Shahzaib
+  -name2: Hamza
+
+#anchor and aliases
+---
+defaults: &default_settings  # anchor
+ timeout: 30
+ retries: 5
+ language: true
+
+ development:
+  <<: *default_setting   #alises
+  language: false  #override values
+
+fruits: bananas
+
+...
+
+
