@@ -24,7 +24,7 @@ names: # dictionary
 #anchor and aliases
 ---
 defaults: &default_settings  # anchor
- timeout: 30
+ timeout: 60
  retries: 5
  language: true
 
